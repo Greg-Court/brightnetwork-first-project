@@ -9,11 +9,6 @@ ul a{
     text-decoration:none;
 }
 
-ul a:active{
-    text-decoration: underline white;
-    text-underline-position: under;
-
-}
 nav {
     display: flex;
     justify-content: space-between;
@@ -36,11 +31,15 @@ ul a:hover{
     background-color: #196719;
     color: rgb(138, 138, 138);
     padding: 0.4em;
+    text-decoration: underline;
 }
-
+#search{ /*currently not changing text, but can change borders etc*/
+    font-family: 'Times New Roman', Times, serif;
+}
 
 h1{
     display: flex;
+    font-size: xx-large;
 }
 
 .bestsellers-section{
@@ -61,25 +60,76 @@ h1{
 .service-options {
   display: flex;
   justify-content: space-around;
-  padding: 2em 0;
+  padding-bottom: 2em;
   width: 100%;
 }
 .services {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .services img {
-  max-width: 200px;
+  max-width: 300px;
+  margin-bottom: 0.5em;
+  border-radius: 16px;
 }
 
-#intro-pic{
-    width:500px;
+.services img:hover {
+  box-shadow: 0 0 10px white;
+  transition: all .2s ease;
+}
+
+.services:hover {
+  transform: scale(1.05);
+  transition: all .2s ease;
+}
+
+/* .services .service-desc {
+  max-width: 300px;
+  text-align: center;
+} */
+
+.intro{
+    background-color: #196719;
+    margin-top: 10px;
     display:flex;
+    justify-content:space-around;
+}
+#intro-pic{
+    width:30%;
+    display:flex;
+    justify-content: right;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 3%;
+}
+#about-us{
+    margin-left:20px;
+    margin-top: 20px;
+}
+#welcome{
+    margin-left: auto;
+    margin-right: auto;
+}
+#welcome-left{
+        width: 450px;
+        margin-left:20px;  
+}
+#sign-up{
+    padding-top: 20px;
+}
+.cta {
+    border: 2px solid #A3BC71;
+    padding: 5px 10px;
+    background: #8F4737;  
+}   
+#click{
+    cursor: pointer;
 }
 
 footer {
