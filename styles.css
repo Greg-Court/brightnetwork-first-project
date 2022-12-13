@@ -283,6 +283,7 @@ ul a:hover{
     justify-content: space-around;
     align-items: center;
     padding: 1% 5%;
+    margin-top: 0;
 }
 
 #intro-pic{
@@ -324,10 +325,11 @@ ul a:hover{
 
 table {
   width: 100%;
-  padding: 1.5em;
+  padding: 1em;
   padding-left: 4.7em;
-  
+  margin-bottom: 0;
 }
+
 
 table a:hover{
   background-color: rgb(83, 8, 8);
@@ -343,7 +345,8 @@ footer {
   padding-bottom: 0.3em;
 }
 
-h3{
+footer h3{
   font-size: medium;
   text-align: center;
+  margin-top: 0;
 }
