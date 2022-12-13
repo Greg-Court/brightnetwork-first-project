@@ -99,6 +99,7 @@ ul a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .comments {
@@ -143,14 +144,14 @@ ul a:hover{
   color: darkred;
   position: relative;
   left: -300px;
-  top: -90px;
+  top: -123px;
 }
 
 .swiper-button-next {
   color: darkred;
   position: relative;
   right: -300px;
-  top: -115px;
+  top: -145px;
 }
 
 .services-section {
@@ -344,6 +345,11 @@ table a:hover{
   color: rgb(138, 138, 138);
   padding: 0.4em;
   text-decoration: underline;
+}
+
+table a{
+  color: beige;
+  text-decoration: none;
 }
 
 
