@@ -2,18 +2,28 @@ body {
   background-color: rgb(17, 37, 17);
   color: beige;
   font-family: 'Lora', serif;
+  margin: 0px;
+}
+h2 {
+  font-size: 2.5em;
 }
 
-ul a{
-    color:beige;
-    text-decoration:none;
+/*HEADER*/
+header{
+  background-color: rgb(83, 8, 8);
+}
+
+h1{
+  display: flex;
+  font-size: 48px;
+  margin: 16px 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-  }
-  
+    padding: 0 64px;
+  } 
 nav ul {
     width: 500px;
     align-items: center;
@@ -26,35 +36,138 @@ ul{
     justify-content: space-around;
     text-align: left;
 }
+ul a{
+  color:beige;
+  text-decoration:none;
+}
 
 ul a:hover{
-    background-color: #196719;
+    background-color: rgb(83, 8, 8);
     color: rgb(138, 138, 138);
     padding: 0.4em;
     text-decoration: underline;
 }
-#search{ /*currently not changing text, but can change borders etc*/
-    font-family: 'Times New Roman', Times, serif;
+#search { 
+  font-family: 'Lora', serif;
+  font-size: medium;
+  border-radius: 8px;
+  border-color: darkgreen;
+  padding-left: 0.5em;
+  background-color: beige;
 }
+/*BODY*/
 
-h1{
-    display: flex;
-    font-size: xx-large;
+#bs{
+  text-shadow: 5px -5px 10px rgb(125, 4, 4);
 }
 
 .bestsellers-section{
   display: flex;
-  
-  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.services-section {
+
+.bestsellers-options{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2em;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.bestsellers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.bestsellers img{
+  width: 200px;
+  height: 250px;
+  border: 3px solid rgb(151, 10, 10);
+  margin-bottom: 0.5em;
+  border-radius: 16px;
+}
+
+.testimonial-section{
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #196719;
-  width: 100%;
+}
+
+.comments {
+  margin-top: 2em;
+}
+
+.swiper {
+  width: 550px;
+  height: auto;
+}
+
+.swiper.swiper-slide.flex{
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper.swiper-slide.comments{
+  padding: 1.5em;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 9em;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper.profile>a{
+  text-decoration: none;
+  color: darkred;
+}
+
+.swiper-button-prev {
+  color: darkred;
+  position: relative;
+  left: -300px;
+  top: -90px;
+}
+
+.swiper-button-next {
+  color: darkred;
+  position: relative;
+  right: -300px;
+  top: -115px;
+}
+
+.services-section {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgreen;
+  width: max;
+}
+
+.services-section .separation-line {
+  border-top: 10px dotted rgb(17, 37, 17);
+  min-width: 100px;
+  max-height: 0;
+  margin-bottom: 2.5em;
 }
 
 .service-options {
@@ -63,18 +176,22 @@ h1{
   padding-bottom: 2em;
   width: 100%;
 }
+
 .services {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
   cursor: pointer;
+  justify-content: center;
 }
 
 .services img {
-  max-width: 300px;
   margin-bottom: 0.5em;
   border-radius: 16px;
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
 }
 
 .services img:hover {
@@ -87,51 +204,145 @@ h1{
   transition: all .2s ease;
 }
 
-/* .services .service-desc {
-  max-width: 300px;
-  text-align: center;
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.contact-section .separation-line,
+.bestsellers-section .separation-line, 
+.testimonial-section .separation-line {
+  border-top: 10px dotted darkgreen;
+  min-width: 100px;
+  max-height: 0;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 50%;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.contact-inputs input,
+.contact-inputs select,
+.contact-inputs textarea {
+  min-height: 50px;
+  min-width: 43%;
+  border-radius: 8px;
+  background-color: rgb(245, 245, 235);
+  padding: 0 1em;
+  border: 2px solid darkgreen;
+  font-family: 'Lora', serif;
+  font-size: 18px;
+}
+
+.contact-inputs textarea {
+  padding-top: 1em;
+}
+
+#country {
+  min-width: 47.3%;
+}
+
+#submit:hover {
+  box-shadow: 0 0 10px white;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+#submit:active {
+  transform: translateY(2px);
+  transition: none;
+  background-color: darkgreen;
+}
+
+.names,
+.contact-details,
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .contact-inputs select {
+  min-height: 50px;
+  min-width: 200px;
 } */
+
 
 .intro{
     background-color: #196719;
     margin-top: 10px;
+    margin-bottom: 10px;
     display:flex;
-    justify-content:space-around;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 5%;
 }
+
 #intro-pic{
-    width:30%;
-    display:flex;
-    justify-content: right;
-    margin-left: auto;
-    margin-right: auto;
+    width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 3%;
+    border-radius: 50%;
 }
 #about-us{
-    margin-left:20px;
-    margin-top: 20px;
-}
-#welcome{
-    margin-left: auto;
-    margin-right: auto;
+  text-shadow: 5px -5px 10px rgb(125, 4, 4);
 }
 #welcome-left{
-        width: 450px;
-        margin-left:20px;  
+  max-width: 600px;
 }
+
 #sign-up{
     padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
 }
 .cta {
     border: 2px solid #A3BC71;
     padding: 5px 10px;
-    background: #8F4737;  
+    background: #8F4737; 
+    border-radius: 16px; 
 }   
 #click{
     cursor: pointer;
+    color: beige;
+    text-decoration: none;
 }
 
+
+
+
+
+/*FOOTER*/
+
+
+table {
+  width: 100%;
+  padding: 1.5em;
+  padding-left: 4.7em;
+  
+}
+
+table a:hover{
+  background-color: rgb(83, 8, 8);
+  color: rgb(138, 138, 138);
+  padding: 0.4em;
+  text-decoration: underline;
+}
+
+
 footer {
+  text-align: center;
+  background-color: rgb(83, 8, 8);
+  padding-bottom: 0.3em;
+}
+
+h3{
+  font-size: x-small;
   text-align: center;
 }
