@@ -1,60 +1,22 @@
-/* .signup-page{
-    width: 400px;
-    padding: 10%;
-    margin:auto;
-}
-
-.form{
-    position: relative;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-
-}
-
-.form input{
-    padding: 15px;
-} */
-
-/* header .header{
-    background-color: #fff;
-    height: 55px;
-  } */
-/* header a img{
-    width: 134px;
-  margin-top: 4px;
-  } */
-
-
-  .signup-header{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.signup-header{
+    font-family: 'Lora', serif;
   }
- .signup-page {
+.signup-page { /*styles and moves essentialy body section*/
     width: 400px;
     padding: 10%;
     margin: auto;
   }  
 
-  /* .login-page .form .login{
-    margin-top: -31px;
-  margin-bottom: 26px;
-  } */
-
-
-  .welcome{
+.welcome{
     color: beige;
     /* background-color: rgb(17, 37, 17); */
     /* padding: 20px; */
   }
-  .subheader{
+.subheader{
     color: beige;
   }
   
-  
-  .form {
-    /* position: relative; */
-    /* z-index: 1; */
+.form {
     background: rgb(83, 8, 8);
     max-width: 360px;
     margin: 0 auto 100px;
@@ -63,8 +25,8 @@
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
-  .form input {
-    font-family: "Roboto", sans-serif;
+.form input {
+    font-family: 'Lora', serif;
     outline: 0;
     background: beige;
     width: 100%;
@@ -74,36 +36,18 @@
     box-sizing: border-box;
     font-size: 14px;
   }
-  /* .form button {
-    font-family: "Roboto";
-    outline: 0;
-    background-color: #adebad;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #196719;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-  } */
-  /* .form .message {
+.form .message {
     margin: 15px 0 0;
-    color: #b3b3b3;
+    color: rgb(208, 208, 168);
     font-size: 12px;
-  } */
-  /* .form .message a {
-    color: #28a428 ;
-    text-decoration: none;
-  } */
-  
-  /* .container {
-    position: relative;
-    z-index: 1;
-    max-width: 300px;
-    margin: 0 auto;
-  } */
-  
-  body {
-    /* background-color: #328f8a; */
-    background-image: url(https://cdn.britannica.com/79/202379-050-73D3F83C/Christmas-tree-holiday-pine.jpg);}
+  }
+.form .message a {
+    color: rgb(208, 208, 168);
+    text-decoration: underline;
+  }
+
+body {
+    /* background-color: white; */
+    background-image: url(
+        https://i0.wp.com/racinecountyeye.com/wp-content/uploads/2022/11/ai-generated-7570068_1920.jpg?w=1920&ssl=1
+    );}
